@@ -6,7 +6,7 @@ metadata:
   labels:
     app: mt3chained
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       tier: mt3chained-web-pod
@@ -17,7 +17,7 @@ spec:
       labels:
         tier: mt3chained-web-pod
         color: tomato
-        mylabel: 1001
+        mylabel: somevalue
     spec:
       containers:
       - name: mt3chained-web
